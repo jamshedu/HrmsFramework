@@ -1,7 +1,5 @@
 package com.hrms.testcase;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -22,7 +20,7 @@ public class AddEmployeeTest extends CommonMethods {
 //		tearDown();
 //	}
 
-	@Test
+	@Test(groups = {"smoke"})
 	public void addEmployeePage() {
 		//DashboardPageElements d=new DashboardPageElements();
 		login.login(ConfigsReader.getProperty("username"), ConfigsReader.getProperty("password"));
@@ -33,11 +31,11 @@ public class AddEmployeeTest extends CommonMethods {
 		sendText(addEmp.creditUserName,"Jamshed88");
 		sendText(addEmp.creditPassWord,"Jamshed9999$");
 		sendText(addEmp.credReEnterPassWord, "Jamshed9999$");
-		screenShotObject("screenshots/HRMS/james.png");
+		//screenShotObject("screenshots/HRMS/james.png");
 	}
 		
-		@Test
-		public void addEmployeePage1() {
+		@Test(groups = {"smoke"})
+		public void addEmployeePageAnother() {
 			//DashboardPageElements d=new DashboardPageElements();
 			login.login(ConfigsReader.getProperty("username"), ConfigsReader.getProperty("password"));
 			dashboard.navigateToAddEmployee();
@@ -49,16 +47,10 @@ public class AddEmployeeTest extends CommonMethods {
 			click(addEmp.buttonSave);
 			
 			String valueActual="Required";
-			AssertJUnit.assertEquals(addEmp.reqFirstName.getText(), valueActual);
-			AssertJUnit.assertEquals(addEmp.reqLastName.getText(), valueActual);
-			screenShotObject("screenshots/HRMS/john.png");
+			Assert.assertEquals(addEmp.reqFirstName.getText(), valueActual);
+			Assert.assertEquals(addEmp.reqLastName.getText(), valueActual);
+			//screenShotObject("screenshots/HRMS/john.png");
 			
-			
-			
-			
-			
-			
-		
 		
 //		sendText(addEmp.empFirstName, ConfigsReader.getProperty("employeeFirstname"));
 //		sendText(addEmp.empLastName, ConfigsReader.getProperty("employeeLastname"));

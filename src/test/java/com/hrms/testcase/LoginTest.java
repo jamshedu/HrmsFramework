@@ -1,12 +1,6 @@
 package com.hrms.testcase;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.hrms.pages.DashboardPageElements;
@@ -18,15 +12,7 @@ public class LoginTest extends CommonMethods{
 	
 	
 	
-	@BeforeMethod
-	public void openBrowser() {
-		setUp();
-	}
 
-	@AfterMethod
-	public void closeBrowser() {
-		tearDown();
-	}
 //	@BeforeMethod
 //	public void openBrowser() {
 //		setUp();
@@ -38,10 +24,11 @@ public class LoginTest extends CommonMethods{
 //		tearDown();
 //	}
 
-	@Test
+	@Test(groups = {"smoke"})
 	public void validAdminLogin() {
 		//LoginPageElements login = new LoginPageElements();
 		LoginPageElements login = new LoginPageElements();
+		test.info("Entering to HRMS credentials");
 		sendText(login.username, ConfigsReader.getProperty("username"));
 		sendText(login.password, ConfigsReader.getProperty("password"));
 		click(login.loginBtn);
@@ -51,31 +38,38 @@ public class LoginTest extends CommonMethods{
 		String expectedUser="Welcome Admin";
 		Object dashboard;
 		//String actualUser=dashboard.welcome.getText();
+		test.info("Veryfuing welcome admin is diplayed");
 		String actualUser1=db.welcome.getText();
-		AssertJUnit.assertEquals(actualUser1, expectedUser, "Admin is NOT Logged in");
-		AssertJUnit.assertTrue(actualUser1.contains(ConfigsReader.getProperty("username")));
+		Assert.assertEquals(actualUser1, expectedUser, "Admin is NOT Logged in");
+		Assert.assertTrue(actualUser1.contains(ConfigsReader.getProperty("username")));
 	}
 
-	@Test
+	@Test(groups = {"regression"})
 	public void invalidPasswordLogin() {
+		test.info("Entering to HRMS credentials");
+
 		LoginPageElements login = new LoginPageElements();
 		sendText(login.username, ConfigsReader.getProperty("username"));
 		sendText(login.password, "uiuguig");
 		click(login.loginBtn);
-
+		test.info("verifying error message is diplayed");
 		String expected="Invalid credentials";
-		AssertJUnit.assertEquals(login.errorMsg.getText(), expected, "Error message text is not matched");
+		Assert.assertEquals(login.errorMsg.getText(), expected, "Error message text is not matched");
 	}
 
-	@Test(enabled=true)
+	@Test(groups = {"regression"})
 	public void emptyUsernameLogin() {
+		test.info("Entering to HRMS credentials");
+
 		LoginPageElements login = new LoginPageElements();
 		sendText(login.password, ConfigsReader.getProperty("password"));
 		click(login.loginBtn);
 
+		test.info("verifying error message is diplayed");
+
 		String expected="Username cannot be empty";
 
-		AssertJUnit.assertEquals(login.errorMsg.getText(), expected, "Error message text is not matched");
+		Assert.assertEquals(login.errorMsg.getText(), expected, "Error message text is not matched");
 	}
 
 	

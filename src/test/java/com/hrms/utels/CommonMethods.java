@@ -1,9 +1,8 @@
 package com.hrms.utels;
 
-import java.awt.Desktop.Action;
-import java.awt.event.ActionEvent;
 import java.io.File;
-import java.io.IOException;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Set;
 
@@ -15,7 +14,6 @@ import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.UnexpectedTagNameException;
@@ -258,25 +256,23 @@ public class CommonMethods extends PageInitializer {
 			e.printStackTrace();
 		}
 	}
-	
 	/**
-	 * This Method take screenShot
+	 * This Method will take a screenshot
 	 * 
-	 * @return filename
+	 * @param filename
 	 */
-	public static TakesScreenshot takeSreenShots() {
-		TakesScreenshot ts=(TakesScreenshot)driver;
-		return ts;
-	}
-	public static void screenShotObject(String filePath) {
-		File fileScreenShot=takeSreenShots().getScreenshotAs(OutputType.FILE);
-		
+	public static String takeScreenshot(String filename) {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File file = ts.getScreenshotAs(OutputType.FILE);
+		String destinationFile = Constants.SCREENSHOT_FILEPATH + filename + ".png";
+
 		try {
-			FileUtils.copyFile(fileScreenShot, new File(filePath));
-		} catch (IOException e) {
-			
-			e.printStackTrace();
+			FileUtils.copyFile(file, new File(destinationFile));
+		} catch (Exception ex) {
+			System.out.println("Cannot take screenshot!");
 		}
-		
+
+		return destinationFile;
 	}
+
 }

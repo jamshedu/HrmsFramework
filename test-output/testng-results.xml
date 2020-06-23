@@ -1,73 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34621" started-at="2020-05-30T17:46:04 PDT" finished-at="2020-05-30T17:46:39 PDT">
+  <suite name="Default suite" duration-ms="8707" started-at="2020-06-22T13:06:32 PDT" finished-at="2020-06-22T13:06:41 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34621" started-at="2020-05-30T17:46:04 PDT" finished-at="2020-05-30T17:46:39 PDT">
-      <class name="com.hrms.testcase.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="setUp" is-config="true" duration-ms="5326" started-at="2020-05-30T17:46:04 PDT" finished-at="2020-05-30T17:46:10 PDT">
+    <test name="Default test" duration-ms="8707" started-at="2020-06-22T13:06:32 PDT" finished-at="2020-06-22T13:06:41 PDT">
+      <class name="com.hrms.testcase.ContactDetailCase">
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="generateReport" is-config="true" duration-ms="189" started-at="2020-06-22T13:06:32 PDT" finished-at="2020-06-22T13:06:33 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="setUp" is-config="true" duration-ms="4118" started-at="2020-06-22T13:06:33 PDT" finished-at="2020-06-22T13:06:37 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="openBrowser" is-config="true" duration-ms="2557" started-at="2020-05-30T17:46:10 PDT" finished-at="2020-05-30T17:46:12 PDT">
+        <test-method status="PASS" signature="contacDatails()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="contacDatails" duration-ms="2153" started-at="2020-06-22T13:06:37 PDT" finished-at="2020-06-22T13:06:39 PDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="emptyUsernameLogin()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="emptyUsernameLogin" duration-ms="617" started-at="2020-05-30T17:46:12 PDT" finished-at="2020-05-30T17:46:13 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptyUsernameLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="closeBrowser" is-config="true" duration-ms="2140" started-at="2020-05-30T17:46:13 PDT" finished-at="2020-05-30T17:46:15 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="tearDown" is-config="true" duration-ms="2000" started-at="2020-05-30T17:46:15 PDT" finished-at="2020-05-30T17:46:17 PDT">
+        </test-method> <!-- contacDatails -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="tearDown" is-config="true" duration-ms="2197" started-at="2020-06-22T13:06:39 PDT" finished-at="2020-06-22T13:06:41 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="setUp" is-config="true" duration-ms="2184" started-at="2020-05-30T17:46:17 PDT" finished-at="2020-05-30T17:46:19 PDT">
+        <test-method status="PASS" signature="writeReport()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="writeReport" is-config="true" duration-ms="2" started-at="2020-06-22T13:06:41 PDT" finished-at="2020-06-22T13:06:41 PDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="openBrowser" is-config="true" duration-ms="2734" started-at="2020-05-30T17:46:19 PDT" finished-at="2020-05-30T17:46:22 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="invalidPasswordLogin()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="invalidPasswordLogin" duration-ms="1153" started-at="2020-05-30T17:46:22 PDT" finished-at="2020-05-30T17:46:23 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidPasswordLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="closeBrowser" is-config="true" duration-ms="2131" started-at="2020-05-30T17:46:23 PDT" finished-at="2020-05-30T17:46:25 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="tearDown" is-config="true" duration-ms="2002" started-at="2020-05-30T17:46:25 PDT" finished-at="2020-05-30T17:46:27 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="setUp" is-config="true" duration-ms="2356" started-at="2020-05-30T17:46:27 PDT" finished-at="2020-05-30T17:46:30 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="openBrowser" is-config="true" duration-ms="2467" started-at="2020-05-30T17:46:30 PDT" finished-at="2020-05-30T17:46:32 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="validAdminLogin()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="validAdminLogin" duration-ms="2748" started-at="2020-05-30T17:46:32 PDT" finished-at="2020-05-30T17:46:35 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validAdminLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="closeBrowser" is-config="true" duration-ms="2143" started-at="2020-05-30T17:46:35 PDT" finished-at="2020-05-30T17:46:37 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.testcase.LoginTest@74650e52]" name="tearDown" is-config="true" duration-ms="2003" started-at="2020-05-30T17:46:37 PDT" finished-at="2020-05-30T17:46:39 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.hrms.testcase.LoginTest -->
+        </test-method> <!-- writeReport -->
+      </class> <!-- com.hrms.testcase.ContactDetailCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

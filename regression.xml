@@ -13,8 +13,9 @@
 				<include name="regression"></include>
 			</run>
 		</groups>
+		
 		<packages>
-			<package name="com.hrms.testcases" />
+			<package name="com.hrms.testcase" />
 		</packages>
 
 	</test> <!-- Test -->
