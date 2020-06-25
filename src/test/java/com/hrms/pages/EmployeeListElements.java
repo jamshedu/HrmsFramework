@@ -8,11 +8,63 @@ import com.hrms.testbase.BaseClass;
 
 public class EmployeeListElements {
 	
+	
+	@FindBy(xpath = "//a[@id='menu_pim_viewPimModule']")
+	public WebElement empPim;
+	
+	@FindBy(xpath = "//a[@id='menu_pim_viewEmployeeList']")
+	public WebElement empLIst;
+	
 	@FindBy(xpath = "//input[@id='empsearch_employee_name_empName']")
 	public WebElement empName;
 	
-	@FindBy(xpath = "empsearch_id")
+	@FindBy(xpath = "//input[@id='empsearch_id']")
 	public WebElement empID;
+	
+	@FindBy(xpath = "//a[text()='Orzu']")
+	public WebElement empOrzu;
+	
+	@FindBy(xpath = "//input[@id='btnSave']")
+	public WebElement empSaveBtn;
+	
+	@FindBy(xpath = "//input[@id='personal_txtOtherID']")
+	public WebElement empOtherID;
+	
+	@FindBy(xpath = "//input[@id='personal_txtEmpMiddleName']")
+	public WebElement middleName;
+	
+	@FindBy(xpath = "//input[@id='personal_txtLicenNo']")
+	public WebElement empDriverLicens;
+	
+	@FindBy(xpath = "//input[@id='personal_txtLicExpDate']")
+	public WebElement empDriverExpireDate;
+	
+	@FindBy(xpath = "//input[@id='personal_txtNICNo']")
+	public WebElement empSSN;
+	
+	@FindBy(xpath = "//input[@id='personal_txtSINNo']")
+	public WebElement empSINNumber;
+	
+	@FindBy(xpath = "//input[@id='personal_optGender_2']")
+	public WebElement empFemale;
+	
+	@FindBy(xpath = "//input[@id='personal_optGender_1']")
+	public WebElement empMale;
+	
+	@FindBy(xpath = "//select[@id='personal_cmbNation']")
+	public WebElement empNatianality;
+	
+	@FindBy(xpath = "//input[@id='personal_txtEmpNickName']")
+	public WebElement empNickname;
+	
+	@FindBy(xpath = "//input[@id='personal_chkSmokeFlag']")
+	public WebElement empNonSmoke;
+	
+	@FindBy(xpath = "//input[@id='personal_txtMilitarySer']")
+	public WebElement empMilitary;
+	
+	@FindBy(xpath = "//input[@id='personal_DOB']")
+	public WebElement empDOB;
 	
 	@FindBy(xpath = "//select[@id='empsearch_employee_status']")
 	public WebElement empStatus;

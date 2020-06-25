@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8707" started-at="2020-06-22T13:06:32 PDT" finished-at="2020-06-22T13:06:41 PDT">
+  <suite name="Default suite" duration-ms="50439" started-at="2020-06-25T11:51:09 PDT" finished-at="2020-06-25T11:52:00 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8707" started-at="2020-06-22T13:06:32 PDT" finished-at="2020-06-22T13:06:41 PDT">
+    <test name="Default test" duration-ms="50439" started-at="2020-06-25T11:51:09 PDT" finished-at="2020-06-25T11:52:00 PDT">
       <class name="com.hrms.testcase.ContactDetailCase">
-        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="generateReport" is-config="true" duration-ms="189" started-at="2020-06-22T13:06:32 PDT" finished-at="2020-06-22T13:06:33 PDT">
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="generateReport" is-config="true" duration-ms="173" started-at="2020-06-25T11:51:09 PDT" finished-at="2020-06-25T11:51:09 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="setUp" is-config="true" duration-ms="4118" started-at="2020-06-22T13:06:33 PDT" finished-at="2020-06-22T13:06:37 PDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="setUp" is-config="true" duration-ms="13634" started-at="2020-06-25T11:51:09 PDT" finished-at="2020-06-25T11:51:23 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="contacDatails()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="contacDatails" duration-ms="2153" started-at="2020-06-22T13:06:37 PDT" finished-at="2020-06-22T13:06:39 PDT">
+        <test-method status="PASS" signature="contacDatails()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="contacDatails" duration-ms="34387" started-at="2020-06-25T11:51:23 PDT" finished-at="2020-06-25T11:51:57 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contacDatails -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="tearDown" is-config="true" duration-ms="2197" started-at="2020-06-22T13:06:39 PDT" finished-at="2020-06-22T13:06:41 PDT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="tearDown" is-config="true" duration-ms="2189" started-at="2020-06-25T11:51:57 PDT" finished-at="2020-06-25T11:52:00 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="writeReport()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="writeReport" is-config="true" duration-ms="2" started-at="2020-06-22T13:06:41 PDT" finished-at="2020-06-22T13:06:41 PDT">
+        <test-method status="PASS" signature="writeReport()[pri:0, instance:com.hrms.testcase.ContactDetailCase@1b68ddbd]" name="writeReport" is-config="true" duration-ms="3" started-at="2020-06-25T11:52:00 PDT" finished-at="2020-06-25T11:52:00 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeReport -->

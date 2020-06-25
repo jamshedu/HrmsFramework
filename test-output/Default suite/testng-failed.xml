@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.report.DefineReport">
+      <class name="com.hrms.testcase.ContactDetailCase">
         <methods>
-          <include name="report"/>
           <include name="generateReport"/>
           <include name="writeReport"/>
+          <include name="contacDatails"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.report.DefineReport -->
+      </class> <!-- com.hrms.testcase.ContactDetailCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
